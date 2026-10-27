@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mark-design-site-auditor"
+version = "0.1.0"
+description = "Zero-dependency website health audit (SEO, mobile, security, speed) with client-ready HTML reports."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Mark Design", email = "info@mark-design.net" }]
+keywords = ["seo", "audit", "website", "wordpress", "web-agency"]
+
+[project.urls]
+Homepage = "https://mark-design.net"
+
+[project.scripts]
+mdaudit = "mdaudit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
